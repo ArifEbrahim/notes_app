@@ -34,6 +34,13 @@ const expect = (a) => {
       }
     },
 
+    toBeTruthy: () => {
+      if (a) {
+        console.log('Pass'); 
+      } else {
+        console.log('Fail');
+      }
+    },
 
   }
 }

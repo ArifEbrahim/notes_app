@@ -1,3 +1,5 @@
+'use strict';
+
 const describe = (tag, callback) => {
   console.log(tag);
   callback();

@@ -1,12 +1,15 @@
+'use strict';
+
 describe('noteStorage', () => {
 
   it('can store notes in local storage', () =>{
-    noteStorage = new NoteStorage();
     localStorage.clear();
+    let noteStorage = new NoteStorage();
     noteStorage.create("This is a test, this is a test");
-    key = localStorage.key(0)
+    let key = localStorage.key(0)
     let value = localStorage.getItem(key)
     expect(value).toEqual("This is a test, this is a test");
+    localStorage.clear();
   });
 
 });

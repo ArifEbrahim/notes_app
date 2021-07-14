@@ -2,15 +2,11 @@ describe('noteStorage', () => {
 
   it('can store notes in local storage', () =>{
     noteStorage = new NoteStorage();
+    localStorage.clear();
     noteStorage.create("This is a test, this is a test");
-    let value = localStorage.getItem("This is a test, this");
+    key = localStorage.key(0)
+    let value = localStorage.getItem(key)
     expect(value).toEqual("This is a test, this is a test");
-  });
-
-  it('can create text keys', () => {
-    noteStorage = new NoteStorage();
-    let testText = noteStorage.getKey("HelloWorldHelloWorld12345")
-    expect(testText).toEqual('HelloWorldHelloWorld')
   });
 
 });

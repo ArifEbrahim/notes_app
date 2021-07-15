@@ -15,7 +15,10 @@
     </div>
     <div id="left-box">
       <textarea id='input_value' type='text' rows='15' cols='40' placeholder='text'></textarea>
-      <button id='btnInsert'>Create</button>
+      <div id='btn-container'>
+        <button id='btnInsert'>Create</button>
+        <button id='btnDelete' onclick="Delete()">Delete note</button>
+      </div>
     <div id="noteOutput-box">
         <div id='noteOutput'></div>
     </div>
@@ -27,6 +30,15 @@
     </div>
   </main>
   <footer>Arif, Zsuzsanna and Merryn &copy;</footer>
+
+<script type='text/javascript'>
+function Delete() {
+  document.getElementById("btnDelete").addEventListener("click", () => {  
+    localStorage.clear()
+  })
+}
+</script>
+
   
   <script src="lib/interface.js"></script>
   <script src="lib/noteStorage.js"></script>

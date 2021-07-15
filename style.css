@@ -34,13 +34,16 @@ main{
 #left-box{
     display:flex;
     flex-direction: column;
-    /* border: 1px solid black; */
     height: 50%;
     margin: 10px;
-    padding: 10px;
     border-radius: 2%;
+}
+
+#noteOutput{
+    min-height: 100px;
     max-width: 300px;
-    /* overflow: auto; */
+    max-height: 450px;
+    overflow: auto;
 }
 
 #input_value{
@@ -51,10 +54,12 @@ main{
     background-color:  #FFF4BD;
     border: 1px solid black;
     border-radius: 2%;
-    padding: 10px;
     font-family: 'Caveat', cursive;
     font-size: 1.5rem; 
-    min-height: 100px;
+    max-height: 250px;
+    min-height: 150px;
+    max-width: 300px;
+    resize: none;
 }
 
 #btn-container{
@@ -99,6 +104,7 @@ main{
   border: 1px solid black;
   overflow: auto;
   font-size: 1.5rem; 
+  min-width: 100px;
 }
 
 #right-box a{

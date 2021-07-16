@@ -34,11 +34,16 @@ main{
 #left-box{
     display:flex;
     flex-direction: column;
-    /* border: 1px solid black; */
     height: 50%;
     margin: 10px;
-    padding: 10px;
     border-radius: 2%;
+}
+
+#noteOutput{
+    min-height: 100px;
+    max-width: 300px;
+    max-height: 450px;
+    overflow: auto;
 }
 
 #input_value{
@@ -49,19 +54,25 @@ main{
     background-color:  #FFF4BD;
     border: 1px solid black;
     border-radius: 2%;
-    padding: 10px;
+    font-family: 'Caveat', cursive;
+    font-size: 1.5rem; 
+    max-height: 250px;
+    min-height: 150px;
+    max-width: 300px;
+    resize: none;
 }
 
 #btn-container{
     display: flex;
     flex-direction: row;
     margin: 10px;
+
 }
 
-#btnInsert{
+.button {
     width: 120px;
     background-color: #FFF;
-    padding: 10px 32px;
+    padding: 10px 30px;
     border: 1px solid #e0e0e0;
     font-size: 26px;
     outline: 0;
@@ -71,31 +82,11 @@ main{
     margin: 10px;
     margin-top: 20px;
     border-radius: 2%;
-    box-shadow: 5px 5px 10px 0px black 
+    box-shadow: 5px 5px 10px 0px black;
+    height: 50px;
 }
 
-#btnInsert:hover{
-    background-color:#887BB0;
-    font-size: 28px;
-}
-
-#btnDelete{
-    width: 120px;
-    background-color: #FFF;
-    padding: 10px 32px;
-    border: 1px solid #e0e0e0;
-    font-size: 26px;
-    outline: 0;
-    transition: all 0.3s;
-    cursor: pointer;
-    font-family: 'Caveat', cursive;
-    margin: 10px;
-    margin-top: 20px;
-    border-radius: 2%;
-    box-shadow: 5px 5px 10px 0px black 
-}
-
-#btnDelete:hover{
+.button:hover{
     background-color:#887BB0;
     font-size: 28px;
 }
@@ -112,6 +103,8 @@ main{
   border-radius: 2%;
   border: 1px solid black;
   overflow: auto;
+  font-size: 1.5rem; 
+  min-width: 100px;
 }
 
 #right-box a{
@@ -135,6 +128,7 @@ main{
   box-shadow: 10px 10px 20px 0px black ;
   border-radius: 2%;
   border: 1px solid black;
+  font-size: 1.5rem; 
 }
 
 footer{

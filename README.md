@@ -1,19 +1,32 @@
-# notes_app
+# Notes App
 
-### [Makers Academy](http://www.makersacademy.com) - Week 7 Pair Group Project
-
-Team members:
-* [Arif Ebrahim](https://github.com/ArifEbrahim)
-* [Merryn Hurley-Rawlins](https://github.com/merrynhr)
-* [Zsuzsanna Ver](https://github.com/MrsVer)
-
-This is a single-page notes app allowing users to create a note, and have it appear in a list of notes created that session. Notes will not persist beyond the user session.
+This is a single-page notes app allowing users to create a note, and have it appear in a list of notes. The notes are stored locally on the uers machine. The user can select a note to view it and also click a button to delete the note.
 
 The learning objectives for this week were:
 
 * Build a dynamic single page app using only Pure JS
 * Request and use data from an external API
-* Explain that libraries are code
+* Understand and use libraries by building a test framework from scratch
+
+## Frontend view (screenshot)
+
+![screenshot](/attachments/screenshot.png)
+
+## How to use
+
+Clone this repo to your machine and open index.html in your web browser.
+
+#### Add a note
+
+Add a new note by clicking into the yellow box and typing your note. The app can convert text to emojis using the list [here](https://www.webfx.com/tools/emoji-cheat-sheet/). Click the create button when done and a summarised note will appear in the note list (the pink box on the right).
+
+#### View a note
+
+Click on the note you want to open in the note list and it will appear in full in the note view box in the bottom left hand side of the screen (blue box).
+
+#### Delete a note
+
+Click on the note you want to delete in the note list and it will appear in full in the note view box in the bottom left hand side of the screen (blue box). Once it is there, click on the delete button and the note will be deleted.
 
 ## User Stories
 ```
@@ -46,7 +59,6 @@ So I can remember what I took down
 
 <img width="800" alt="domain model" src="attachments/domain_model.png">
 
-
 ## Technologies
 
 * Javascript
@@ -55,8 +67,10 @@ So I can remember what I took down
 
 ## Testing Framework
 
-The repo includes a bespoke testing framework written from scratch. This is based on the tests found in Jasmine that use describe, it and expect. A number of matchers were developed to go with the tests such as toBe, toEqual and isTypeOf. 
+The repo includes a bespoke testing framework written from scratch. This is based on the tests found in Jasmine that use "describe", "it" and "expect". All of the output occurs in the console. A number of matchers were developed to go with the tests such as toBe, toEqual and isTypeOf. 
 
-## Frontend view (screenshot)
+## Credits 
 
-![screenshot](/attachments/screenshot.png)
+- [Merryn Hurley-Rawlins](https://github.com/merrynhr)
+- [Zsuzsanna Ver](https://github.com/MrsVer)
+- [Arif Ebrahim](https://github.com/ArifEbrahim)

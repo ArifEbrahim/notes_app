@@ -55,6 +55,8 @@ So I can remember what I took down
 
 ## Testing Framework
 
-The repo includes a bespoke testing framework written from scratch.
+The repo includes a bespoke testing framework written from scratch. This is based on the tests found in Jasmine that use describe, it and expect. A number of matchers were developed to go with the tests such as toBe, toEqual and isTypeOf. 
 
 ## Frontend view (screenshot)
+
+![screenshot](/attachments/screenshot.png)

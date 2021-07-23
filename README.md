@@ -8,7 +8,9 @@ The learning objectives for this week were:
 * Request and use data from an external API
 * Understand and use libraries by building a test framework from scratch
 
-## Frontend view (screenshot)
+The app is live and hosted [here](https://arifebrahim.github.io/notes_app/)
+
+## Screenshot
 
 ![screenshot](/attachments/screenshot.png)
 
@@ -33,31 +35,23 @@ Click on the note you want to delete in the note list and it will appear in full
 As a programmer
 I can see a list of my notes, where each note is abbreviated to the first 20 characters
 So I can find the one I want
-```
-```
+
 As a programmer
 I can create a new note
 So I can record something I need to remember
-```
-```
+
 As a programmer
 I can see the full text of an individual note on its own page
 So I can see all the information in the note
-```
-```
+
 As a programmer
 I can use shortcodes like `:fire:` that get converted into emojis like 🔥
 So I can record notes with fun little pictures
-```
-```
+
 As a programmer
 I can refresh the page and still see my notes
 So I can remember what I took down
 ```
-
-## Domain Model
-
-<img width="800" alt="domain model" src="attachments/domain_model.png">
 
 ## Technologies
 
